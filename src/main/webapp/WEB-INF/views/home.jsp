@@ -5,12 +5,13 @@
 </head>
 <body id="top">
 	<article>
+<!-- 
 		<div id="logoBanner">
 			<div id="logo">
-<img src="https://pbs.twimg.com/profile_images/808290829123121152/phanLgu3_400x400.jpg" width="70" height="70"/>
-				<!-- placeholder for logo -->
 			</div>
+			<div id="title">SNIK Ontology</div>
 		</div>
+-->
 		<header>
 			<hgroup>
 				<h1>

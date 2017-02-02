@@ -2,13 +2,15 @@
 <head data-color="${colorPair}" profile="http://www.w3.org/1999/xhtml/vocab">
 <title>${results.getTitle()} &mdash; LodView</title>
 				<%@include file="inc/header.jsp"%>
+
 </head><body id="top">
 	<article>
-		<div id="logoBanner"> 
-			<div id="logo">
-				<!-- placeholder for logo -->
-			</div>
-		</div>
+<!--
+<div id="logoBanner"> 
+<div id="logo">
+</div>
+</div>
+-->
 		<header>
 			<hgroup>
 				<h1><span>${results.getTitle()}</span></h1>

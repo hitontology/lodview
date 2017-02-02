@@ -52,10 +52,10 @@
 @prefix claros: <http://purl.org/NET/Claros/vocab#> .
 @prefix crm120111: <http://erlangen-crm.org/120111/> .
 @prefix rel: <http://purl.org/vocab/relationship/> .
-@prefix meta: <http://www.snik.eu/ontology/meta> .
-@prefix bb: <http://www.snik.eu/ontology/bb> .
-@prefix ob: <http://www.snik.eu/ontology/ob> .
-@prefix he: <http://www.snik.eu/ontology/he> .
+@prefix meta: <http://www.snik.eu/ontology/meta/> .
+@prefix bb: <http://www.snik.eu/ontology/bb/> .
+@prefix ob: <http://www.snik.eu/ontology/ob/> .
+@prefix he: <http://www.snik.eu/ontology/he/> .
 
 
 <> a conf:Configuration;
@@ -133,13 +133,12 @@
 
 
 ##	default query used to extract inverse relations
-
 	conf:defaultInversesQueries "select distinct ?p {?p <${PROPERTY}> <${IRI}>.}  OFFSET ${STARTFROM} LIMIT 10"; 
 	conf:defaultInversesCountQueries "select (count(distinct ?s) AS ?o) ?p {?s ?p <${IRI}>. FILTER(!isBlank(?s))} GROUP BY ?p LIMIT 100";
 	conf:defaultInversesTest "ASK {?s ?p <${IRI}>}";
 
 ##  define if inverse relations have to be automatically opened (open|close)
-	conf:defaultInverseBehaviour "close"; 
+	conf:defaultInverseBehaviour "open"; 
 
 ########################################################################################
 ########################		configuring the webapp			########################
