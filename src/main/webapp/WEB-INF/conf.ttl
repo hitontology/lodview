@@ -52,6 +52,10 @@
 @prefix claros: <http://purl.org/NET/Claros/vocab#> .
 @prefix crm120111: <http://erlangen-crm.org/120111/> .
 @prefix rel: <http://purl.org/vocab/relationship/> .
+@prefix meta: <http://www.snik.eu/ontology/meta> .
+@prefix bb: <http://www.snik.eu/ontology/bb> .
+@prefix ob: <http://www.snik.eu/ontology/ob> .
+@prefix he: <http://www.snik.eu/ontology/he> .
 
 
 <> a conf:Configuration;
@@ -60,11 +64,11 @@
 ## 	IRIs namespace we use to replace the webapp base (eg. http://localhost:8080/lodview/), an
 ##	installation on dbpedia domain should use <http://dbpedia.org/resource/> 
 	
-	conf:IRInamespace <http://dbpedia.org/resource/>  ;
+	conf:IRInamespace <http://www.snik.eu/ontology/>  ;
 
 ## 	EndPoint
 
-	conf:endpoint <http://dbpedia.org/sparql>;
+	conf:endpoint <http://www.snik.eu/sparql>;
 	conf:endpointType "virtuoso"; 	## 	just "virtuoso" is handled right now, this will add some "rawdata" 
 									##	options in the footer, leave this blank if you don't want these links
 
@@ -75,7 +79,8 @@
 ##	to the HTML representation of the resources, live it blank if you want to 
 ##  use the "pure content negotiation mode", WARNING use suffix OR prefix, not both
 	
-	conf:httpRedirectSuffix ".html"; ## or eg. ".html";
+	conf:httpRedirectSuffix ""; ## or eg. ".html";
+	##conf:httpRedirectSuffix ".html"; ## or eg. ".html";
 	##conf:httpRedirectPrefix "/page/"; ## or eg. "";
 
 	##conf:httpRedirectExcludeList ""; 	## a comma separeted list of regex to match which resources will use "pure content negotiation mode"
@@ -145,6 +150,7 @@
 ##	domain should use <http://dbpedia.org/resource/>
 
 	conf:publicUrlPrefix <auto>; ## or <auto>
+	##conf:publicUrlPrefix <http://www.snik.eu/ontology/>; ## or <auto>
 
 
 ## solve IRI issues in particular environments (proxypass, etc.)
@@ -153,7 +159,7 @@
 
 ##	home link (accessible from the banner)
 
-	conf:homeUrl <http://remember to change this in conf.ttl>;
+	conf:homeUrl <http://www.snik.eu/ontology/meta/Top>;
 
   	
 ##	static resources publishing point, "staticResources/" is needed if you are going 
@@ -169,14 +175,14 @@
 ##	you need also to add the ontology file in WEB-INF/ontologies
 ##	leave conf:mainOntologies blank if you don't want lodlive do this job 
 
-##	conf:mainOntologiesPrefixes	 YOUR-PREFIX:;	
+##	conf:mainOntologiesPrefixes	 meta:;	
 
 ##	document specific property used in the HTML resource page, it's possible to use
 ##	prefixes or not
 
 	conf:typeProperties			rdf:type;
 	
-	conf:titleProperties		dc:title , dcterms:title, rdfs:label , <http://www.w3.org/2004/02/skos/core#prefLabel> , 
+	conf:titleProperties		dc:title , dcterms:title, rdfs:label , <http://www.w3.org/2004/02/skos/core#prefLabel> ,  skos:altLabel,
 								<http://www.w3.org/2008/05/skos-xl#prefLabel> , <http://www.w3.org/2009/08/skos-reference/skos.html#prefLabel> , 
 								gn:officialName , gn:name , rdf:value , foaf:surname , <http://purl.org/collections/nl/am/title> , <http://xmlns.com/foaf/0.1/name>;  
 								
@@ -188,7 +194,7 @@
 								
 	conf:longitudeProperties	geo:long;
 	conf:latitudeProperties		geo:lat;
-	conf:linkingProperties		owl:sameAs , skos:exactMatch , gn:locatedIn ,  <http://www.bbc.co.uk/ontologies/coreconcepts/sameAs>;
+	conf:linkingProperties		owl:sameAs , skos:exactMatch , gn:locatedIn ,  <http://www.bbc.co.uk/ontologies/coreconcepts/sameAs>, ;
 
 	conf:videoProperties		<http://schema.org/VideoObject>;
 	conf:audioProperties		<http://schema.org/AudioObject>;
