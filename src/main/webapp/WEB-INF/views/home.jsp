@@ -6,19 +6,29 @@
 <body id="top">
 	<article>
 		<div id="logoBanner">
-			<div id="logo">
+			<div id="logo"><img src="https://pbs.twimg.com/profile_images/808290829123121152/phanLgu3_400x400.jpg"/>
 				<!-- placeholder for logo -->
 			</div>
 		</div>
 		<header>
 			<hgroup>
 				<h1>
-					<span>This is your own homepage</span>
+					<span>Browse the SNIK Ontology</span>
 				</h1>
-				<h2></h2>
+				<h2>Semantic Network of Information Management in Hospitals</h2>
 			</hgroup>
 			<div id="abstract">
-				<div class="value">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</div>
+				<div class="value">
+Example Classes:
+<ul>
+<li><a href="http://www.snik.eu/meta/Top">meta:Top</a></li>
+<li><a href="http://www.snik.eu/meta/EntityType">meta:EntityType</a></li>
+<li><a href="http://www.snik.eu/meta/Function">meta:Function</a></li>
+<li><a href="http://www.snik.eu/meta/Role">meta:Role</a></li>
+<li><a href="http://www.snik.eu/bb/InformationManagementEntityType">bb:InformationManagementEntityType</a></li>
+<li><a href="http://www.snik.eu/ob/InformationAquisitionMethod">ob:InformationAquisitionMethod</a></li>
+</ul>
+			</div>
 			</div>
 
 		</header>
@@ -27,7 +37,14 @@
 
 		<div id="directs">
 
-			<div class="value">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+			<div class="value">
+See also:
+<ul>
+<li><a href="http://www.snik.eu/graph">Visualization</a></li>
+<li><a href="http://www.snik.eu/sparql">SPARQL Endpoint</a></li>
+<li><a href="http://www.snik.eu">Project Homepage</a></li>
+</ul>
+</div>
 
 		</div>
 
