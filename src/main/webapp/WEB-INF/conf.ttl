@@ -149,8 +149,8 @@
 ##	if you are using a proxy, set it at <auto> for testing, an installation on dbpedia
 ##	domain should use <http://dbpedia.org/resource/>
 
-	conf:publicUrlPrefix <auto>; ## or <auto>
-	##conf:publicUrlPrefix <http://www.snik.eu/ontology/>; ## or <auto>
+	##conf:publicUrlPrefix <auto>; ## or <auto>
+	conf:publicUrlPrefix <http://www.snik.eu/ontology/>; ## or <auto>
 
 
 ## solve IRI issues in particular environments (proxypass, etc.)
@@ -194,7 +194,7 @@
 								
 	conf:longitudeProperties	geo:long;
 	conf:latitudeProperties		geo:lat;
-	conf:linkingProperties		owl:sameAs , skos:exactMatch , gn:locatedIn ,  <http://www.bbc.co.uk/ontologies/coreconcepts/sameAs>, ;
+	conf:linkingProperties		owl:sameAs , skos:exactMatch , gn:locatedIn ,  <http://www.bbc.co.uk/ontologies/coreconcepts/sameAs>, skos:related, skos:closeMatch, skos:relatedMatch, skos:broadMatch, skos:narrowMatch;
 
 	conf:videoProperties		<http://schema.org/VideoObject>;
 	conf:audioProperties		<http://schema.org/AudioObject>;
