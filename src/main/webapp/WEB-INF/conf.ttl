@@ -230,4 +230,4 @@
 
 <http://www.snik.eu/ontology/meta/> conf:hasColorPair "#914848-#7d3e3e". 
 <http://www.snik.eu/ontology/bb/> conf:hasColorPair "#ac8cb0-#967999".
-<http://www.snik.eu/ontology/ob/> conf:hasColorPair "#c3a116-#ac8c13".
+<http://www.snik.eu/ontology/ob/> conf:hasColorPair "#d9a116-#bf8c13".
