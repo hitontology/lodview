@@ -204,14 +204,11 @@
 
 ## interface colors, choose a pair or a list for random colors
 
-	conf:colorPair 	"#c3a116-#ac8c13" , "#914848-#7d3e3e" , "#8a4e6a-#77435c" , "#ac8cb0-#967999" ,
-					"#715287-#624775" , "#606592-#53577e" , "#7eb9be-#6da2a7" , "#5b8a97-#4f7783" , 
-					"#86b692-#749f7e" , "#528775-#477565" , "#6d8058-#5e6f4c" , "#a1a72e-#8c9128" ,
-					"#c77e20-#ad6e1c" ;
+#	conf:colorPair 	"#c3a116-#ac8c13" , "#914848-#7d3e3e" , "#8a4e6a-#77435c" , "#ac8cb0-#967999" ,	"#715287-#624775" , "#606592-#53577e" , "#7eb9be-#6da2a7" , "#5b8a97-#4f7783" , "#86b692-#749f7e" , "#528775-#477565" , "#6d8058-#5e6f4c" , "#a1a72e-#8c9128" ,	"#c77e20-#ad6e1c" ;
 	
 #### or bind classes and colors
 ## 	
-## 	conf:colorPair  conf:byClass;
+ 	conf:colorPair  conf:byPrefix;
 
 	
 ## license information (will be added at the very end of the page)
@@ -230,3 +227,7 @@
 ##	<http://dbpedia.org/ontology/Organisation>	conf:hasColorPair	"#6d8058-#5e6f4c". 
 ##	<http://dbpedia.org/ontology/Event>	conf:hasColorPair	"#5b8a97-#4f7783". 
 ##	<http://lodview.it/conf#otherClasses>	conf:hasColorPair	"#528775-#477565". 
+
+<http://www.snik.eu/ontology/meta/> conf:hasColorPair "#914848-#7d3e3e". 
+<http://www.snik.eu/ontology/bb/> conf:hasColorPair "#ac8cb0-#967999".
+<http://www.snik.eu/ontology/ob/> conf:hasColorPair "#c3a116-#ac8c13".
