@@ -147,8 +147,8 @@
 ##	if you are using a proxy, set it at <auto> for testing, an installation on dbpedia
 ##	domain should use <http://dbpedia.org/resource/>
 
-	##conf:publicUrlPrefix <auto>; ## or <auto>
-	conf:publicUrlPrefix <http://www.snik.eu/ontology/>; ## or <auto>
+	conf:publicUrlPrefix <auto>; ## or <auto>
+	#conf:publicUrlPrefix <http://www.snik.eu/ontology/>; ## or <auto>
 
 
 ## solve IRI issues in particular environments (proxypass, etc.)
