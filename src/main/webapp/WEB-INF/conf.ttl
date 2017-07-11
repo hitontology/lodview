@@ -55,6 +55,10 @@
 @prefix bb: <http://www.snik.eu/ontology/bb/> .
 @prefix ob: <http://www.snik.eu/ontology/ob/> .
 @prefix he: <http://www.snik.eu/ontology/he/> .
+@prefix ciox: <http://www.snik.eu/ontology/ciox/> .
+@prefix it: <http://www.snik.eu/ontology/it/> .
+@prefix it4it: <http://www.snik.eu/ontology/it4it/> .
+@prefix he: <http://www.snik.eu/ontology/he/> .
 
 
 <> a conf:Configuration;
@@ -231,3 +235,7 @@
 <http://www.snik.eu/ontology/meta/> conf:hasColorPair "#914848-#7d3e3e". 
 <http://www.snik.eu/ontology/bb/> conf:hasColorPair "#ac8cb0-#967999".
 <http://www.snik.eu/ontology/ob/> conf:hasColorPair "#d9a116-#bf8c13".
+<http://www.snik.eu/ontology/ciox/> conf:hasColorPair "#52a19e-#407d7b".
+<http://www.snik.eu/ontology/he/> conf:hasColorPair "#5f9650-#4e7a41".
+<http://www.snik.eu/ontology/it/> conf:hasColorPair "#cb62cb-#bf40bf".
+<http://www.snik.eu/ontology/it4it/> conf:hasColorPair "#99994c-#808040".
