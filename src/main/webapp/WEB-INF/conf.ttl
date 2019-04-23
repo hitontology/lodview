@@ -119,7 +119,6 @@
 		from <http://www.snik.eu/ontology/limes-exact>
 		from <http://www.snik.eu/ontology/match>
 		from <http://www.snik.eu/ontology/persian>
-		from <http://www.snik.eu/ontology/derived>
 		from <http://www.snik.eu/ontology/virtual>
 		{ 
 		{<${IRI}> ?p ?o} 
