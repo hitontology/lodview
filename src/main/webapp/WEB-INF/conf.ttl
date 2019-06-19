@@ -68,7 +68,7 @@
 ## 	IRIs namespace we use to replace the webapp base (eg. http://localhost:8080/lodview/), an
 ##	installation on dbpedia domain should use <http://dbpedia.org/resource/> 
 	
-	conf:IRInamespace <https://hitontology.eu/ontology/>  ;
+	conf:IRInamespace <http://hitontology.eu/ontology/>  ;
 
 ## 	EndPoint
 
@@ -140,8 +140,10 @@
 
 
 ##	default query used to extract inverse relations
+	conf:defaultInversesCountQueries "select (count(distinct ?s) AS ?o)  ?p {?s ?p <${IRI}>. FILTER(!isBlank(?s))} GROUP BY ?p LIMIT 100";
 	conf:defaultInversesQueries "select distinct ?p FROM <http://hitontology.eu/ontology> {?p <${PROPERTY}> <${IRI}>.}  OFFSET ${STARTFROM} LIMIT 10"; 
-	conf:defaultInversesCountQueries "select (count(distinct ?s) AS ?o) FROM <http://hitontology.eu/ontology> ?p {?s ?p <${IRI}>. FILTER(!isBlank(?s))} GROUP BY ?p LIMIT 100";
+	# for unknown reasons, the inverse count query does not work with the FROM clause
+	#conf:defaultInversesCountQueries "select (count(distinct ?s) AS ?o) FROM <http://hitontology.eu/ontology> ?p {?s ?p <${IRI}>. FILTER(!isBlank(?s))} GROUP BY ?p LIMIT 100";
 	conf:defaultInversesTest "ASK FROM <http://hitontology.eu/ontology> {?s ?p <${IRI}>}";
 
 ##  define if inverse relations have to be automatically opened (open|close)
