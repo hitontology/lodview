@@ -14,6 +14,7 @@
 				</c:otherwise>
 			</c:choose>
 			<li><a target="_blank" href="${lodliveUrl}"><sp:message code='footer.viewLodlive' text='view on lodlive' /></a></li>
+			<li><a target="_blank" href="${gitHubUrl}"><sp:message code='footer.createGitHubIssue' text='create GitHub issue' /></a></li>
 			<c:forEach items="${rawdatalinks.keySet()}" var="list">
 				<li class="viewas"><span>${list}</span> 
 					<c:set var="tot" value="${rawdatalinks.get(list).size()}" />

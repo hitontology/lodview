@@ -255,6 +255,7 @@ public class ResourceController {
 
 		addDataLinks(IRI, model, req, locale);
 		addLodliveLink(locale, model, IRI);
+		createGitHubIssue(locale, model, IRI);
 		enrichResponse(model, r, req, res);
 		return "resource";
 	}
@@ -348,6 +349,11 @@ public class ResourceController {
 		} else {
 			model.addAttribute("lodliveUrl", "http://en.lodlive.it?" + IRI.replaceAll("#", "%23"));
 		}
+	}
+
+	private void createGitHubIssue(Locale locale, ModelMap model, String IRI) {
+			String escaped = IRI.replaceAll("#", "%23");
+			model.addAttribute("gitHubUrl", "https://github.com/hitontology/lodview/issues/new?title=" + escaped + "&body=" + escaped);
 	}
 
 	private void enrichResponse(ModelMap model, ResultBean r, HttpServletRequest req, HttpServletResponse res) {
