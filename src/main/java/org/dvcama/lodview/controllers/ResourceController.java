@@ -353,7 +353,7 @@ public class ResourceController {
 
 	private void createGitHubIssue(Locale locale, ModelMap model, String IRI) {
 			String escaped = IRI.replaceAll("#", "%23");
-			model.addAttribute("gitHubUrl", "https://github.com/hitontology/lodview/issues/new?title=" + escaped + "&body=" + escaped);
+			model.addAttribute("gitHubUrl", "https://github.com/hitontology/ontology/issues/new?title=" + escaped + "&body=" + escaped);
 	}
 
 	private void enrichResponse(ModelMap model, ResultBean r, HttpServletRequest req, HttpServletResponse res) {
