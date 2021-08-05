@@ -42,6 +42,7 @@ See also:
 <ul>
 <li><a href="https://hitontology.eu">Project Homepage</a></li>
 <li><a href="https://hitontology.eu/sparql">SPARQL Endpoint</a></li>
+<li><a href="https://hitontology.github.io/ontology/index-en.html">Ontology Documentation</a></li>
 </ul>
 </div>
 
