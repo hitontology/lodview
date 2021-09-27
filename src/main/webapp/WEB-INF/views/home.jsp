@@ -25,7 +25,7 @@ Example Classes:
 <ul>
 <li><a href="Study">Study</a></li>
 <li><a href="SoftwareProduct">Software Product</a></li>
-<li><a href="ApplicationSystemNL">Application System</a></li>
+<li><a href="ApplicationSystemClassified">Application System</a></li>
 <li><a href="Journal">Journal</a></li>
 </ul>
 			</div>
