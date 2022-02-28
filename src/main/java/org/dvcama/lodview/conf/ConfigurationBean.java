@@ -38,6 +38,7 @@ public class ConfigurationBean implements ServletContextAware, Cloneable {
 	private String httpRedirectSuffix;
 	private String httpRedirectPrefix;
 	private String endPointUrl;
+	private String imprintUrl;
 	private String IRInamespace;
 	private String contentEncoding;
 	private String staticResourceURL;
@@ -75,6 +76,7 @@ public class ConfigurationBean implements ServletContextAware, Cloneable {
 
 		endPointUrl = getSingleConfValue("endpoint");
 		endPointType = getSingleConfValue("endpointType", "");
+		imprintUrl = getSingleConfValue("imprint");
 		authPassword = getSingleConfValue("authPassword");
 		authUsername = getSingleConfValue("authUsername");
 		forceIriEncoding = getSingleConfValue("forceIriEncoding", "auto");
@@ -210,6 +212,10 @@ public class ConfigurationBean implements ServletContextAware, Cloneable {
 
 	public String getEndPointUrl() {
 		return endPointUrl;
+	}
+
+	public String getImprintUrl() {
+		return imprintUrl;
 	}
 
 	public List<String> getDefaultQueries() {

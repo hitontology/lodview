@@ -23,6 +23,7 @@
 					</c:forEach>
 				</li>
 			</c:forEach>
+			<li><a target="_blank" href="${conf.getImprintUrl()}"><sp:message code='footer.viewImprint' text='view imprint' /></a></li>
 		</ul>
 	</div>
 </footer>
